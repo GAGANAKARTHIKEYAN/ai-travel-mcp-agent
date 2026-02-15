@@ -13,8 +13,8 @@ from langgraph.prebuilt import create_react_agent
 # =====================================
 load_dotenv()
 
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+OPENWEATHER_API_KEY = st.secrets["OPENWEATHER_API_KEY"]
 
 # =====================================
 # Streamlit Setup
@@ -177,3 +177,4 @@ Return clean Markdown only.
 
 st.divider()
 st.caption("LangGraph MCP Travel Agent | Academic Project")
+
